@@ -18,9 +18,10 @@ int main(int argc, char* argv[]) {
     }
 
     infixExp.setInfix(infix);
-    infixExp.showInfix();
     infixExp.calcPostfix();
-    infixExp.showPostfix();
+
+    std::cout << "infix:   " << infixExp.getInfix() << std::endl;
+    std::cout << "postfix: " << infixExp.getPostfix() << std::endl;
     std::cout << std::endl;
     return 0;
 }

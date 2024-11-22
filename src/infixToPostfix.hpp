@@ -3,10 +3,10 @@
 #include <vector>
 
 enum SymbolType {
-    OPENER,     // (, [, {
-    CLOSER,     // ), ], }
-    OPERATOR,   // +, -, *, /
-    OPERAND     // a number or a variable (multi-character allowed)
+    OPENER,     // i.e. (, [, {
+    CLOSER,     // i.e. ), ], }
+    OPERATOR,   // i.e. +, -, *, /
+    OPERAND     // numbers or a variables (multi-character allowed)
 };
 
 struct Symbol {
@@ -26,6 +26,6 @@ class infixToPostfix {
     public:
         void calcPostfix();
         void setInfix(const std::string& infix);
-        void showInfix() const;
-        void showPostfix();
+        std::string getInfix() const;
+        std::string getPostfix() const;
 };

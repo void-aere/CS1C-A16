@@ -1,5 +1,4 @@
 #include "infixToPostfix.hpp"
-#include <iostream>
 #include <set>
 #include <algorithm>
 
@@ -8,13 +7,12 @@ void infixToPostfix::setInfix(const std::string& infix) {
     if (infix.back() == ';') this->infix.pop_back();
 }
 
-void infixToPostfix::showInfix() const {
-    std::cout << infix << std::endl;
+std::string infixToPostfix::getInfix() const {
+    return infix;
 }
 
-void infixToPostfix::showPostfix() {
-    calcPostfix();
-    std::cout << postfix << std::endl;
+std::string infixToPostfix::getPostfix() const {
+    return postfix;
 }
 
 std::vector<Symbol> infixToPostfix::parseEquation(const std::string& equation) {
