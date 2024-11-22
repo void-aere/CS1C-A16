@@ -1,7 +1,3 @@
-<style type="text/css">
-    ol { list-style-type: lower-alpha; }
-</style>
-
 ## Infix to Postfix Transcriber
 
 ### Building
@@ -10,6 +6,8 @@
 
 ### Running
 
-1. call the executable (`./run-me`) and follow instructions
-2. call the executable with a parameter (`./run-me "A + B"`)
-3. use the driver-tester (`./driver`)
+<ol type="a">
+    <li>call the executable (<code>./run-me</code>) and follow instructions</li>
+    <li>call the executable with a parameter (<code>./run-me "A + B"</code>)</li>
+    <li>use the driver-tester (<code>./driver</code>)</li>
+</ol>
