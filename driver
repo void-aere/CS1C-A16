@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# For each line in $TESTS, call $EXECUTABLE, passing it as input
+TESTS="./testcases.txt"
+EXECUTABLE="./run-me"
+
+# Does the executable exist?
+if [[ ! -e $EXECUTABLE ]]; then
+    echo "Executable '$EXECUTABLE' does not exist. Did you 'make'?"
+fi
+
+# Call the executable with each test case
+while read line; do
+    "$EXECUTABLE" "$line"
+done < $TESTS
